@@ -1,0 +1,35 @@
+#+TITLE: Asciify a string
+
+[[file:examples/asciify.png]]
+
+Converts given string to ASCII art
+
+* How to use
+#+begin_src shell
+asciify text
+#+end_src
+
+[[file:examples/text.png]]
+
+** Syntax
+#+begin_src shell
+asciify [-number] string_to_asciify
+#+end_src
+
+Optional parameter -number specifies maximum number of letters on a line (Default 5)
+
+** Examples
+asciify example
+[[file:examples/example.png]]
+
+asciify -3 example
+[[file:examples/example3.png]]
+
+asciify -7 example
+[[file:examples/example7.png]]
+
+* Notes
+- Supports Alphabets [A-Z] , Digits [0-9] ans space
+- Lower-case alphabets are converted to upper-case
+- Special characters are converted to space
+- To use multiple words, enclose parameter string in quotes 
